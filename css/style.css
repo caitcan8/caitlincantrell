@@ -1,0 +1,412 @@
+
+/* skip to main styling  */
+
+.skip {
+  position:absolute;
+  top: -40px;   
+}
+.skip:focus{
+  top: 0;
+  position: absolute;  
+  background-color: #014f86;;
+  color: #f9bec7;
+  font-size: 135%;
+}
+:focus{
+  border-width: 3px;
+  border-color: #f9bec7;
+  border-style: solid;
+}
+
+/* nav bar styling  */
+nav li{
+    display:inline;
+    padding-right:1rem;
+    padding-left: 1rem;
+    
+
+    border-right: 1px solid #014f86;
+    font-size: 135%;
+  }
+  
+  nav a{
+    color: #014f86;
+    font-weight: bold;
+    text-decoration: none; 
+    
+    
+  }
+
+  nav a:hover{
+    text-decoration: underline;
+  }
+  #navlinks{
+    display: grid;
+    justify-items:end;
+    
+  }
+  /* set font */
+/* this should make the link scroll nicely  */
+  html {
+    font-family: "Fjalla One";
+    scroll-behavior: smooth;
+    color:#f8edeb;
+
+  }
+  
+  
+  main img{
+    max-width: 80%;
+  }
+ 
+  nav{
+    background-color: #f9bec7;
+    padding: 25px 0; 
+    text-align: left;
+    
+  }
+  
+
+  #main{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    
+  }
+  body{
+    background-color: #014f86;
+  }
+  /* Scroll to Top Code taken and modified from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 2vh; /* Place the button at the bottom of the page */
+  right: 1.2vw; /* Place the button 30px from the right */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #f9bec7; 
+  color: #014f86; 
+  padding: 1.75vw; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size:115%;
+  z-index: 999;
+  border-width: 3px;
+  border-color: #014f86;
+  border-style: solid;
+  font-weight: 800;
+  font-size:x-large;
+}
+
+#myBtn:hover {
+  text-decoration: underline; 
+}
+  #home{
+    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+  }
+  #aboutme{
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+  }
+  #projects{
+    grid-row: 3/span 1;
+    grid-column: 2/span 1;
+  }
+  #skills{
+    grid-row: 4/span 1;
+    grid-column: 2/span 1;
+  }
+  #message{
+    grid-row: 5/span 1;
+    grid-column: 2/span 1;
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    padding: 2vh;
+  }
+  p{
+    font-size: 170%;
+    padding:0.5vh;
+  }
+  #resumedownload {
+  background-color: #f9bec7;   /* light pink */
+  color: #014f86;              /* navy text */
+  border: none;
+  border-radius: 8px;          /* rounded corners */
+  padding: 2vh;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2vh;
+  
+}
+    #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    
+  } 
+  
+  .project{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+  }
+   
+/* card animation inspired by https://codepen.io/william-goldsworthy/pen/JzVajj */
+.project{
+  display: flex;
+  flex-direction: column;
+  /* height: 280px;
+  width: 200px; */
+  height:30vh;
+  width: 45vw;
+  /* width: 20vh; */
+  background-color: #f9bec7;
+  border-radius: 20px;
+  /* box-shadow: -1rem 0 3rem #000; */
+  box-shadow: 10px 10px 20px rgb(0 0 0 / 40%), inset 0px 0px 10px rgb(0 0 0 / 30%);
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  justify-content: center;
+  align-items:center;
+  padding: 1.2rem;
+  overflow: scroll;
+}
+ol > li{
+  font-size:100%;
+}
+
+
+.project:hover{
+  transform: translateY(-30px)scale(1);
+  /* transform: translateX(-40px); */
+  transition: 0.3s linear;
+}
+.project:focus{
+  /* transform: translateY(-40px)scale(1.1); */
+  transition: 0.3s linear;
+}
+
+
+.logos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+
+}
+.logos > img{
+  width: 100%;
+}
+footer > p{
+  background-color:  #f9bec7;
+  font-weight: 800;
+  font-size:x-large;
+  color:#014f86;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+#message > div > a > img:hover{
+  filter: brightness(80%);
+}
+
+/* style form */
+form {
+    font-size:200%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 6fr 1fr;
+    border: 1px solid #014f86;
+    border-radius: 16px;
+    width:70%;
+    height: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* color: #702082; */
+    color: #014f86;
+    background: #f9bec7;
+    grid-row-gap: 0.75rem;
+    grid-column-gap: 0.5rem;
+  }
+  .name{
+    grid-row:1/span 1;
+    grid-column:1/span 1;
+    text-align: right;
+  }
+  #name{
+    grid-row:1/span 1;
+    grid-column: 2/span 1;
+    background-color: #f8edeb;
+    border: none;
+    border-radius: 8px; 
+  }
+  
+  .email{
+    grid-row:1/span 1;
+    grid-column: 3/span 1;
+    text-align: right;
+    
+  }
+  #email{
+    grid-row:1/span 1;
+    grid-column: 4/span 1;
+    background-color: #f8edeb;
+    border: none;
+    border-radius: 8px; 
+
+    
+  }
+  
+
+  #messagebox{
+    grid-column: 1/span 4;
+    grid-row: 2/span 1;
+    padding-left: 1.2rem;
+    /* text-align: center; */
+  }
+  #messagetext{
+    grid-row:3/span 1;
+    grid-column: 1/span 4;
+    background-color: #f8edeb;
+    margin-left: 1.2rem;
+    border: none;
+    border-radius: 8px; 
+  }
+  
+  #submit{
+    grid-row:4/span 2;
+    background-color: #f9bec7;   /* light pink */
+    color: #014f86;              /* navy text */
+    border:solid;
+    border-color: #014f86;
+    border-width: 0.3rem;
+    border-radius: 8px;          /* rounded corners */
+    /* padding: 2vh; */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2vh;
+    text-align: center;
+    margin-left: 1.2rem;
+  }
+  #submit:hover{
+    text-decoration: underline;
+  }
+ /* tablet view  */
+
+ /*  */
+
+ /* desktop view */
+ #headshot{
+  width: 70vw;
+  margin-top: 3vh;
+ }
+#home{
+  display: grid;
+  justify-items:center;
+}
+
+ #home > div{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+ }
+@media(min-width: 1000px){
+
+  #home{
+    grid-template-columns: 5fr 3fr ;
+  }
+p{
+  text-align: center;
+  font-size: 200%;
+}
+h2{
+  text-align: center;
+  padding: 3.5vh;
+}
+#headshot{
+  width: 90vw;
+  margin-top: 12vh;
+ }
+  #home > div{
+    grid-column:2/span 1;
+    justify-content: center;
+  }
+  #home > img{
+    grid-column:1/span 1;
+  }
+  #projectgallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    align-items: center;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+    /* flex-direction: row; */
+    /* max-width: 100%; */
+  } 
+  
+  
+ 
+  .project {
+  height:43vh;
+  width: 19vw;
+  
+
+  }
+  #projectgallery > .project{
+    margin: 0;
+    margin-right: 5%;
+    
+  }
+ 
+ 
+  
+  /* :focus {
+    /* z-index: 10; */
+    /* transform: rotateY(180deg); */
+  
+  .logos{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+   
+  }
+  .logos img{
+    width: 10vh;
+  }
+
+  #contactme{
+    /* display:flex; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-evenly; */
+   display:grid;
+   grid-template-columns: 5fr 1fr;
+  }
+  
+  #contact-form{
+    height:70vh;
+    width: 70vw;
+    grid-column: 1/span 1;
+  }
+  .logos{
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+}
+
+  /* additional changes made in the javascript for the go to top button  */

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.jpg" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cookbook</title>
+</head>
+<body>
+    <a class = "skip" href="#main" tabindex = 0>Skip to Main Content</a>
+    <header>
+        
+    <nav id = "navlinks">
+        
+        <ul >
+            
+            <li><a href = #home>Home</a></li>
+            <li><a href = #aboutme>About Me</a></li>
+            <li><a href = #projects>Projects</a></li>
+            <li><a href = #skills>Skills</a></li>
+            <li><a href = #message>Contact Me!</a></li>
+        </ul>
+        
+    </nav>
+    </header>
+
+    <main id = "main">
+        <button onclick="topFunction()" id="myBtn" tabindex =0 title="Go to top">Top &#8593; </button>
+        <div id = "home"  >
+            
+            
+            <img id = "headshot" src = "images/headshot.jpg">
+            <div>
+                <h2>Hi, I'm Caitlin Cantrell</h2>
+                <p>Computer Science student at University of Michigan</p>
+                <button id="resumedownload">Resume</button>
+            </div>
+            
+        </div>
+        <div id = "aboutme">
+            <h2>About Me</h2>
+            
+        </div>
+        <div id = "projects">
+            <h2>Projects</h2>
+            <section id="projectgallery">
+            <div id = "nonnogram" class = "project">
+
+            </div>
+            <div id = "cookbook" class = "project">
+
+            </div>
+            <div id = "todo" class = "project">
+
+            </div>
+            </section>
+        </div>
+        <div id = "skills">
+            <h2>Skills and Experience</h2>
+            <div id = "languages" class="skill">
+                <h3>Languages</h3>
+            </div>
+            <div id = "tools" class="skill">
+                <h3>Tools</h3>
+            </div>
+            <div id = "software" class="skill">
+                <h3>Software</h3>
+            </div>
+        </div>
+        <div id = "message">
+            <h2>Contact Me!</h2>
+            <section id = "contactme">
+            <div class = "logos">
+                <a href="mailto:caitcan@umich.edu">
+                    <img src=" images/email.png" alt = "email logo" >
+                    </a>
+                <a href = "https://www.linkedin.com/in/caitlin-cantrell-389187313/">
+                        <img src = "images/linkedin.png" alt = "linkedin logo">
+                    </a>
+           <a href = "https://www.instagram.com/caitlinshea28/">
+            <img src = "images/instagram.png" alt = "instagram logo">
+           </a>
+           
+           <a href = "https://github.com/caitcan8">
+            <img src = "images/github.png" alt = "github logo">
+           </a>
+            
+        </div>
+         <div id="contact-form">
+        <form
+  action="https://formspree.io/f/movlobaa"
+  method="POST"
+>
+  <label class = "email" for="email">
+    Email:</label>
+    <input id="email" type="email" name="email">
+  
+   <label class ="name" for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+  <label id="messagebox">
+    Leave a message:
+    </label>
+    <textarea id = "messagetext" name="message"></textarea>
+  
+  <!-- your other form fields go here -->
+  <button id="submit" type="submit">Send</button>
+</form>
+        </div>
+        </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Caitlin Cantrell </p>
+
+    </footer>
+    <script src="js/top.js"></script> 
+<script src = "js/cardswitch.js"></script>
+</body>
+
+</html>
