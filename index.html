@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="images/logo.jpg" />
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Cookbook</title>
+    <title>Caitlin Cantrell</title>
 </head>
 <body>
     <a class = "skip" href="#main" tabindex = 0>Skip to Main Content</a>
@@ -36,7 +36,8 @@
             <div>
                 <h2>Hi, I'm Caitlin Cantrell</h2>
                 <p>Computer Science student at University of Michigan</p>
-                <button id="resumedownload">Resume</button>
+                <!-- <button id="resumedownload" download = "resume.pdf">Resume</button> -->
+                 <a id="resumedownload" href="resume.pdf" target="_blank">View Resume</a>
             </div>
             
         </div>
@@ -59,8 +60,8 @@
             </section>
         </div>
         <div id = "skills">
-            <h2>Skills and Experience</h2>
-            <div id = "languages" class="skill">
+            <h2>Skills</h2>
+            <!-- <div id = "languages" class="skill">
                 <h3>Languages</h3>
             </div>
             <div id = "tools" class="skill">
@@ -68,7 +69,49 @@
             </div>
             <div id = "software" class="skill">
                 <h3>Software</h3>
+            </div> -->
+            <!-- inspired by w3 schools -->
+             <section id="skillgallery">
+             <div id = "languages">
+             <button class="accordion">Languages</button>
+            <div class="panel">
+                <ul>
+                    <li>C++</li>
+                    <li>Julia</li>
+                    <li>Matlab</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                   
+                </ul>
             </div>
+            </div>
+
+            <div id = "tools">
+            <button class="accordion">Tools</button>
+            <div class="panel">
+            <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Github</li>
+                   
+                </ul>
+            </div>
+            </div>
+
+            <div id = "software">
+            <button class="accordion">Software</button>
+            <div class="panel">
+            <ul>
+                    <li>Microsoft Office Suite</li>
+                    <li>Google Workspace</li>
+                    
+                   
+                </ul>
+            </div>
+            </div>
+
+            </section>
         </div>
         <div id = "message">
             <h2>Contact Me!</h2>
@@ -120,6 +163,7 @@
     </footer>
     <script src="js/top.js"></script> 
 <script src = "js/cardswitch.js"></script>
+<script src = "js/accordion.js"></script>
 </body>
 
 </html>
