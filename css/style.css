@@ -9,12 +9,14 @@
   top: 0;
   position: absolute;  
   background-color: #014f86;;
-  color: #f9bec7;
+  /* color: #f9bec7;
+   */
+   color: #F7E1ED;
   font-size: 135%;
 }
 :focus{
   border-width: 3px;
-  border-color: #f9bec7;
+  border-color: #FAD4E9;
   border-style: solid;
 }
 
@@ -54,13 +56,40 @@ nav li{
 
   }
   
-  
+  h3{
+    font-size: 220%;
+    /* text-align: center; */
+    /* border-radius: 1rem; */
+    border-color: #FAD4E9;
+    border-style: solid;
+    border-width: 0 0 0.25rem 0;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  h4{
+    font-size: 160%;
+    padding: 1rem 0.4rem 1rem 0.4rem;
+    margin: 1rem 0rem 1rem 0rem;
+    background-color: #FAD4E9;
+    color:#014f86;
+    border-radius: 0.5rem;
+
+  }
+  h5{
+    color:#014f86;
+    font-size: 180%;
+  }
+  .explanation{
+    font-size: 130%;
+  }
   main img{
     max-width: 80%;
   }
  
   nav{
-    background-color: #f9bec7;
+    /* background-color: #f9bec7; */
+    background-color: #FAD4E9;
     padding: 25px 0; 
     text-align: left;
     
@@ -85,7 +114,7 @@ nav li{
   right: 1.2vw; /* Place the button 30px from the right */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #f9bec7; 
+  background-color: #FAD4E9;
   color: #014f86; 
   padding: 1.75vw; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -133,7 +162,7 @@ nav li{
     padding:0.5vh;
   }
   #resumedownload {
-  background-color: #f9bec7;   /* light pink */
+  background-color: #FAD4E9;   /* light pink */
   color: #014f86;              /* navy text */
   border: none;
   border-radius: 8px;          /* rounded corners */
@@ -175,7 +204,7 @@ nav li{
   height:30vh;
   width: 45vw;
   /* width: 20vh; */
-  background-color: #f9bec7;
+  background-color: #FAD4E9;
   border-radius: 20px;
   /* box-shadow: -1rem 0 3rem #000; */
   box-shadow: 10px 10px 20px rgb(0 0 0 / 40%), inset 0px 0px 10px rgb(0 0 0 / 30%);
@@ -217,7 +246,7 @@ ol > li{
   filter: brightness(90%);
 }
 footer > p{
-  background-color:  #f9bec7;
+  background-color: #FAD4E9;
   font-weight: 800;
   font-size:x-large;
   color:#014f86;
@@ -244,7 +273,7 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* color: #702082; */
     color: #014f86;
-    background: #f9bec7;
+    background: #FAD4E9;
     grid-row-gap: 0.75rem;
     grid-column-gap: 0.5rem;
   }
@@ -295,7 +324,7 @@ form {
   
   #submit{
     grid-row:4/span 2;
-    background-color: #f9bec7;   /* light pink */
+    background-color: #FAD4E9; /* light pink */
     color: #014f86;              /* navy text */
     border:solid;
     border-color: #014f86;
@@ -334,7 +363,7 @@ form {
  }
  /* accordion styling */
  .accordion {
-  background-color: #f9bec7;
+  background-color: #FAD4E9;
   color: #014f86;
   cursor: pointer;
   padding: 2vh 1vh 1vh 1vh;
@@ -475,6 +504,102 @@ h2{
     /* padding-right: 10vw; */
   }
   
+  #education{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  #educationinfo{
+    grid-column: 1/span 1;
+  }
+  #courses{
+    grid-column: 2/span 1;
+  }
+  #courses > .accordion, #courses > .panel{
+    width: 28vw;
+  }
+  #experience{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #workexperience{
+    margin-right: 1rem;
+  }
 }
 
   /* additional changes made in the javascript for the go to top button  */
+
+
+  @media(max-width: 999px){
+
+    #main{
+      row-gap: 5vh;;
+    }
+    .accordion{
+      width: 70vw;
+    }
+    .panel{
+      width: 70vw;
+    }
+
+
+
+
+   
+  .logos > a{
+      width: 60%;
+    }
+
+    form {
+      /* display: grid; 
+      grid-template-rows: 1fr 1fr 3fr;
+      grid-template-columns: 1fr; */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      
+    }
+    #messagebox{
+      padding: 0;
+    }
+    #messagetext{
+     
+      width: 50vw;
+      height: 20vh;
+      border: none;
+      padding: 0;
+      margin: 0;
+      border-radius: 8px; 
+    }
+    #email, #name{
+      width: 50vw;
+      height: 4vh;
+    }
+    
+    #projectgallery{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project{
+      height:33vh;
+      width: 60vw;
+    }
+    #languages, #tools{
+      margin-bottom: 2vh;
+    }
+    #skillgallery{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #education{
+      margin-bottom: 3vh;
+    }
+    #workexperience{
+      margin-bottom: 3vh;
+    }
+    #home > div{
+      text-align: center;
+    }
+  }
