@@ -92,22 +92,23 @@ efficiency</li>
                 <div id = "otherexperience">
                     <p>Other Experience</p>
                     <h4>MHacks 2025</h4>
-                    <p class = "explanation">blah blah </p>
+                    <p class = "explanation">Attending this month</p>
                     <h4>Michigan Hackers Club</h4>
-                    <p class = "explanation">blah blah </p>
+                    <p class = "explanation"></p>
                 </div>
             </div>
         </div>
         <div id = "projects">
             <h2>Projects</h2>
             <section id="projectgallery">
-            <div id = "nonnogram" class = "project">
+            <div id = "nonnogram" class = "project" data-link="nonogram.html">
+            
                 <h5>Nonogram Solver</h5>
             </div>
-            <div id = "weather" class = "project">
+            <div id = "weather" class = "project" data-link="weather.html">
                 <h5>Weather Widget</h5>
             </div>
-            <div id = "cookbook" class = "project">
+            <div id = "cookbook" class = "project" data-link="cookbook.html">
                 <h5>Cookbook</h5>
             </div>
             </section>
@@ -218,6 +219,21 @@ efficiency</li>
     <script src="js/top.js"></script> 
 <script src = "js/cardswitch.js"></script>
 <script src = "js/accordion.js"></script>
+<script>
+  document.querySelectorAll(".project").forEach(div => {
+    div.addEventListener("click", () => {
+      window.location.href = div.dataset.link;
+    });
+    // Optional: also let keyboard users use Enter
+    div.setAttribute("tabindex", "0");
+    div.addEventListener("keydown", e => {
+      if (e.key === "Enter") {
+        window.location.href = div.dataset.link;
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>

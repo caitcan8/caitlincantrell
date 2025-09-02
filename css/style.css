@@ -286,8 +286,10 @@ form {
     grid-row:1/span 1;
     grid-column: 2/span 1;
     background-color: #f8edeb;
-    border: none;
+    border: solid;
+    border-width: 0.2rem;
     border-radius: 8px; 
+    border-color: #014f86;
   }
   
   .email{
@@ -300,8 +302,10 @@ form {
     grid-row:1/span 1;
     grid-column: 4/span 1;
     background-color: #f8edeb;
-    border: none;
+    border: solid;
+    border-width: 0.2rem;
     border-radius: 8px; 
+    border-color: #014f86;
 
     
   }
@@ -318,8 +322,10 @@ form {
     grid-column: 1/span 4;
     background-color: #f8edeb;
     margin-left: 1.2rem;
-    border: none;
+    border: solid;
+    border-width: 0.2rem;
     border-radius: 8px; 
+    border-color: #014f86;
   }
   
   #submit{
