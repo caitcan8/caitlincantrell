@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo.jpg" />
+    <link rel="icon" type="image/png" href="images/headshot.jpg" />
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/projectstyle.css">
     <title>Caitlin Cantrell</title>
 </head>
 <body>
@@ -23,10 +24,63 @@
         
     </nav>
     </header>
-    <p>Page in Progress</p>
-    <p>Github repository: <a href = "https://github.com/caitcan8/nonogramsolver" style="color: #FAD4E9;"> Nonogram Repository</a></p>
     <main id = "main">
         <button onclick="topFunction()" id="myBtn" tabindex =0 title="Go to top">Top &#8593; </button>
+        <div class = "title">
+    <h2>Nonogram Solver</h2>
+    <p>Github repository: <a href = "https://github.com/caitcan8/nonogramsolver" > Nonogram Repository</a></p>
+    </div>
+    <div class = "description">
+        <h3>Description</h3>
+        <p>A Nonogram, also known as "Picross", is a type of logic puzzle where players fill a grid according to given clues for each row and column. These numerical clues indicate how many consecutive filled boxes there should be, each with a empty box in between. The goal is to reveal the hidden image drawn by the boxes.</p>
+        <p>In this project, I designed an algorithm to efficiently solve these nonogram puzzles on the command line given the dimension and clues through recursion and backtracking. </p>
+    </div>
+    <div class = "keyfeatures">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Recursive Backtracking Algorithm</li>
+            <li>Row and Column Possible Pattern Generation</li>
+            <li>Command Line/File Parsing</li>
+            <li>Partial Validation (Pruning)</li>
+            <li>C++17 Implementation</li>
+        </ul>
+    </div>
+    <div class = "images">
+        <div id = "sampleinput">
+            <h3>Sample Input</h3>
+            <img src = "images/sampleinput.png" >
+            <p>Input files begin with the single dimension number(must be square) for the puzzle. Then, each rows number of clues followed by the actual clues, and each columns similarly.</p>
+        </div>
+        <div id = "sampleoutput">
+            <h3>Sample Output</h3>
+            <img src ="images/sampleoutput.png">
+            <p>Output files show whether or not a solution was found, and if so, a printed version with 1s for filled boxes and zeros for unfilled.</p>
+        </div>
+    </div>
+    <div class = "algorithm">
+        <h3>Algorithm</h3>
+        <ol>
+            <li>Parse puzzle data from input file to generate data structures</li>
+            <li>Generate all valid row patterns from given clues. </li>
+            <li>Place rows one at a time, recursively checking if they align with clues through backtracking</li>
+            <li>Prune away invalid paths</li>
+            <li>Return Solution</li>
+        </ol>
+    </div>
+    <div class = "usage">
+       <h3>Usage</h3>
+       <ul>
+        <li>Compile: g++ -std=c++17 -O2 nonnogram.cpp commandline.cpp  solver.cpp -o solver</li>
+        <li>
+            Help: ./solver -h
+        </li>
+        <li>
+            Execute with input file: ./solver -s inputfile.txt
+        </li>
+       </ul>
+
+    </div>
+</main >
         
     <footer>
         <p>&copy; <span id="year"></span> Caitlin Cantrell </p>
