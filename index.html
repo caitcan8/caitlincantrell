@@ -37,7 +37,7 @@
                 <h2>Hi, I'm Caitlin Cantrell</h2>
                 <p>Computer Science student at University of Michigan</p>
                 <!-- <button id="resumedownload" download = "resume.pdf">Resume</button> -->
-                 <a id="resumedownload" href="resume.pdf" target="_blank">View Resume</a>
+                 <a id="resumedownload" href="caitlincantrell_resume.pdf" target="_blank">View Resume</a>
             </div>
             
         </div>
@@ -49,22 +49,18 @@
                 
                 <p>Undergraduate Computer Science</p>
                 <p>University of Michigan, Ann Arbor</p>
-                <p>GPA: 3.35</p>
+                <p>GPA: 3.37</p>
                 <p>Fall 2023 - Winter 2027</p>
                 </section>
                 <section id = "courses">
                     <button class="accordion">Relevant Courses</button>
                     <div class="panel">
                     <ul>
-                    <li>EECS 370: Computer Organization (Current)</li>
-                    <li>EECS 376: Intro to Computer Science (Current)</li>
-                    <li>EECS 281: Data Structures and Algorithms</li>
-                    <li>EECS 280: Programming and Intro Data Structures</li>
-                    <li>EECS 203: Discrete Mathematics</li>
-                    <li>SI 339: Web Design, Development, and Accessibility</li>
-                    <li>MATH 115-215: Calculus 1, 2, and 3</li>
-                    <li>ROB101 Computational Linear Algebra</li>
-                   
+                    <li>Software Engineering</li>
+                    <li>Human-Centered Software Design</li>
+                    <li>Web Design, Development & Accessibility</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Computer Vision</li>
                      </ul>
             </div>
                     
@@ -74,8 +70,14 @@
             <div id = "experience">
                 <div id="workexperience">
                     <p>Work Experience</p>
+                    <h4>IT Application Development Intern, Lear Corporation</h4>
+                    <ul>
+                        <li class = "explanation">Utilized Palantir Foundry to develop complex dashboards for project management platform user and usage information by building pipelines, managing ontologies, incorporating AI agents and creating workshop applications
+                        </li>
+                        <li class = "explanation">Created presentations and help videos to train users on new Palantir Foundry applications for completing user access reviews</li>
+                        <li class = "explanation">Collaborated on a team project to develop a talent-retention strategy for Lear, proposing recurring Foundry workshops, help sessions, tutorials, and demonstrations to increase employee adoption and engagement with emerging technology</li>
+                    </ul>
                     <h4>Robotics 101 Instructional Aide, University of Michigan</h4>
-                    
                     <ul>
                         <li class = "explanation">Assists students through troubleshooting programming projects and explaining linear algebra concepts with coursework through weekly office hours and class time.
                         </li>
@@ -87,34 +89,10 @@
                         </li>
                         <li class = "explanation">Conducted 50+ consecutive title searches in a row without errors, eliminating the need for a checker and increasing
 efficiency</li>
+                        <li class = "explanation">Promoted to audit and verify other interns' title searches to ensure correctness before submission to the county</li>
                     </ul>
                 </div>
-                <div id = "otherexperience">
-                    <p>Other Experience</p>
-                    <h4>MHacks 2025</h4>
-                    <p class = "explanation">Attending this month</p>
-                    <h4>Michigan Hackers Club</h4>
-                    <p class = "explanation"></p>
-                </div>
             </div>
-        </div>
-        <div id = "projects">
-            <h2>Projects</h2>
-            <section id="projectgallery">
-            <div id = "nonnogram" class = "project" data-link="nonogram.html">
-                
-                <h5>Nonogram Solver</h5>
-                <img src = "images/heart.jpg">
-            </div>
-            <div id = "weather" class = "project" data-link="weather.html">
-                <h5>Weather Widget</h5>
-                <img src = "images/stormy.png" alt = "storm cloud">
-            </div>
-            <div id = "cookbook" class = "project" data-link="cookbook.html">
-                <h5>Cookbook</h5>
-                <img src = "images/logo.png">
-            </div>
-            </section>
         </div>
         <div id = "skills">
             <h2>Skills</h2>
@@ -135,12 +113,14 @@ efficiency</li>
                 <ul>
                     <li>C++</li>
                     <li>Julia</li>
-                    <li>Matlab</li>
+                    <li>MATLAB</li>
+                    <li>Java</li>
                     <li>Python</li>
+                    <li>C</li>
+                    <li>R</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Javascript</li>
-                   
                 </ul>
             </div>
             </div>
@@ -149,9 +129,9 @@ efficiency</li>
             <button class="accordion">Tools</button>
             <div class="panel">
             <ul>
+                    <li>Palantir Foundry</li>
                     <li>Visual Studio Code</li>
                     <li>Github</li>
-                   
                 </ul>
             </div>
             </div>
@@ -168,6 +148,40 @@ efficiency</li>
             </div>
             </div>
 
+            </section>
+        </div>
+        <div id = "projects">
+            <h2>Projects</h2>
+            <h3>Personal Projects</h3>
+            <section id="projectgallery-personal" class="projectgallery">
+            <div id = "nonnogram" class = "project" data-link="nonogram.html">
+                
+                <h5>Nonogram Solver</h5>
+                <img src = "images/heart.jpg">
+            </div>
+            <div id = "weather" class = "project" data-link="weather.html">
+                <h5>Weather Widget</h5>
+                <img src = "images/stormy.png" alt = "storm cloud">
+            </div>
+            <div id = "cookbook" class = "project" data-link="cookbook.html">
+                <h5>Cookbook</h5>
+                <img src = "images/logo.png">
+            </div>
+            </section>
+            <h3>School Projects</h3>
+            <section id="projectgallery-school" class="projectgallery">
+            <div id = "capstone" class = "project">
+                <h5>Capstone (Current)</h5>
+                <p class = "explanation2">Details coming soon.</p>
+            </div>
+            <div id = "facialrecognition" class = "project">
+                <h5>Facial Recognition Algorithm</h5>
+                <p class = "explanation2">Details coming soon.</p>
+            </div>
+            <div id = "digitalforensics" class = "project">
+                <h5>Digital Forensic Investigation</h5>
+                <p class = "explanation2">Details coming soon.</p>
+            </div>
             </section>
         </div>
         <div id = "message">
@@ -224,6 +238,7 @@ efficiency</li>
 <script src = "js/accordion.js"></script>
 <script>
   document.querySelectorAll(".project").forEach(div => {
+    if (!div.dataset.link) return;
     div.addEventListener("click", () => {
       window.location.href = div.dataset.link;
     });

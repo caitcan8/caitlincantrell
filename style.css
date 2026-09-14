@@ -1,0 +1,624 @@
+/* skip to main styling  */
+
+.skip {
+  position:absolute;
+  top: -40px;   
+}
+.skip:focus{
+  top: 0;
+  position: absolute;  
+  background-color: #014f86;;
+  /* color: #f9bec7;
+   */
+   color: #F7E1ED;
+  font-size: 135%;
+}
+:focus{
+  border-width: 3px;
+  border-color: #FAD4E9;
+  border-style: solid;
+}
+
+/* nav bar styling  */
+nav li{
+    display:inline;
+    padding-right:1rem;
+    padding-left: 1rem;
+    
+
+    border-right: 1px solid #014f86;
+    font-size: 135%;
+  }
+  
+  nav a{
+    color: #014f86;
+    font-weight: bold;
+    text-decoration: none; 
+    
+    
+  }
+
+  nav a:hover{
+    text-decoration: underline;
+  }
+  #navlinks{
+    display: grid;
+    justify-items:end;
+    
+  }
+  /* set font */
+/* this should make the link scroll nicely  */
+  html {
+    font-family: "Fjalla One";
+    scroll-behavior: smooth;
+    color:#f8edeb;
+
+  }
+  
+  h3{
+    font-size: 220%;
+    /* text-align: center; */
+    /* border-radius: 1rem; */
+    border-color: #FAD4E9;
+    border-style: solid;
+    border-width: 0 0 0.25rem 0;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  h4{
+    font-size: 160%;
+    padding: 1rem 0.4rem 1rem 0.4rem;
+    margin: 1rem 0rem 1rem 0rem;
+    background-color: #FAD4E9;
+    color:#014f86;
+    border-radius: 0.5rem;
+
+  }
+  h5{
+    color:#014f86;
+    font-size: 180%;
+  }
+  .explanation{
+    font-size: 130%;
+    padding-bottom: 1%;
+  }
+  .explanation2{
+    font-size: 130%;
+    padding-bottom: 1%;
+    color:#014f86
+  }
+  main img{
+    max-width: 80%;
+  }
+ 
+  nav{
+    /* background-color: #f9bec7; */
+    background-color: #FAD4E9;
+    padding: 25px 0; 
+    text-align: left;
+    
+  }
+  
+
+  #main{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    
+  }
+  body{
+    background-color: #014f86;
+  }
+  /* Scroll to Top Code taken and modified from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 2vh; /* Place the button at the bottom of the page */
+  right: 1.2vw; /* Place the button 30px from the right */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #FAD4E9;
+  color: #014f86; 
+  padding: 1.75vw; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size:115%;
+  z-index: 999;
+  border-width: 3px;
+  border-color: #014f86;
+  border-style: solid;
+  font-weight: 800;
+  font-size:x-large;
+  font-family: "Fjalla One";
+}
+
+#myBtn:hover {
+  text-decoration: underline; 
+}
+  #home{
+    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+  }
+  #aboutme{
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+  }
+  #skills{
+    grid-row: 3/span 1;
+    grid-column: 2/span 1;
+  }
+  #projects{
+    grid-row: 4/span 1;
+    grid-column: 2/span 1;
+  }
+  #message{
+    grid-row: 5/span 1;
+    grid-column: 2/span 1;
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    padding: 2vh;
+  }
+  p{
+    font-size: 170%;
+    padding:0.5vh;
+  }
+  #resumedownload {
+  background-color: #FAD4E9;   /* light pink */
+  color: #014f86;              /* navy text */
+  border: none;
+  border-radius: 8px;          /* rounded corners */
+  padding: 2vh;
+  font-size: 130%;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2vh;
+  font-family: "Fjalla One";
+  text-decoration: none;
+  
+}
+#resumedownload:hover{
+  filter: brightness(85%);
+}
+    #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    
+  } 
+  #projects h3{
+    margin-top: 2rem;
+    align-self: stretch;
+  }
+  #projects h3:first-of-type{
+    margin-top: 0;
+  }
+  
+  .project{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+  }
+   
+/* card animation inspired by https://codepen.io/william-goldsworthy/pen/JzVajj */
+.project{
+  display: flex;
+  flex-direction: column;
+  /* height: 280px;
+  width: 200px; */
+  height:30vh;
+  width: 45vw;
+  /* width: 20vh; */
+  background-color: #FAD4E9;
+  border-radius: 20px;
+  /* box-shadow: -1rem 0 3rem #000; */
+  box-shadow: 10px 10px 20px rgb(0 0 0 / 40%), inset 0px 0px 10px rgb(0 0 0 / 30%);
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  justify-content: center;
+  align-items:center;
+  padding: 1.2rem;
+  overflow: scroll;
+}
+ol > li{
+  font-size:100%;
+}
+
+
+.project:hover{
+  transform: translateY(-20px)scale(1);
+  /* transform: translateX(-40px); */
+  transition: 0.3s linear;
+}
+.project:focus{
+  /* transform: translateY(-40px)scale(1.1); */
+  transition: 0.3s linear;
+}
+
+
+.logos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+
+}
+.logos > img{
+  width: 100%;
+}
+.logos> a:hover{
+  filter: brightness(90%);
+}
+footer > p{
+  background-color: #FAD4E9;
+  font-weight: 800;
+  font-size:x-large;
+  color:#014f86;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+#message > div > a > img:hover{
+  filter: brightness(80%);
+}
+
+/* style form */
+form {
+    font-size:200%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 6fr 1fr;
+    border: 1px solid #014f86;
+    border-radius: 16px;
+    width:70%;
+    height: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* color: #702082; */
+    color: #014f86;
+    background: #FAD4E9;
+    grid-row-gap: 0.75rem;
+    grid-column-gap: 0.5rem;
+  }
+  .name{
+    grid-row:1/span 1;
+    grid-column:1/span 1;
+    text-align: right;
+  }
+  #name{
+    grid-row:1/span 1;
+    grid-column: 2/span 1;
+    background-color: #f8edeb;
+    border: solid;
+    border-width: 0.2rem;
+    border-radius: 8px; 
+    border-color: #014f86;
+  }
+  
+  .email{
+    grid-row:1/span 1;
+    grid-column: 3/span 1;
+    text-align: right;
+    
+  }
+  #email{
+    grid-row:1/span 1;
+    grid-column: 4/span 1;
+    background-color: #f8edeb;
+    border: solid;
+    border-width: 0.2rem;
+    border-radius: 8px; 
+    border-color: #014f86;
+
+    
+  }
+  
+
+  #messagebox{
+    grid-column: 1/span 4;
+    grid-row: 2/span 1;
+    padding-left: 1.2rem;
+    /* text-align: center; */
+  }
+  #messagetext{
+    grid-row:3/span 1;
+    grid-column: 1/span 4;
+    background-color: #f8edeb;
+    margin-left: 1.2rem;
+    border: solid;
+    border-width: 0.2rem;
+    border-radius: 8px; 
+    border-color: #014f86;
+  }
+  
+  #submit{
+    grid-row:4/span 2;
+    background-color: #FAD4E9; /* light pink */
+    color: #014f86;              /* navy text */
+    border:solid;
+    border-color: #014f86;
+    border-width: 0.3rem;
+    border-radius: 8px;          /* rounded corners */
+    /* padding: 2vh; */
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Fjalla One";
+    cursor: pointer;
+    margin-top: 2vh;
+    text-align: center;
+    margin-left: 1.2rem;
+  }
+  #submit:hover{
+    text-decoration: underline;
+  }
+ /* tablet view  */
+
+ /*  */
+
+ /* desktop view */
+ #headshot{
+  width: 70vw;
+  margin-top: 3vh;
+ }
+#home{
+  display: grid;
+  justify-items:center;
+}
+
+ #home > div{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+ }
+ /* accordion styling */
+ .accordion {
+  background-color: #FAD4E9;
+  color: #014f86;
+  cursor: pointer;
+  padding: 2vh 1vh 1vh 1vh;
+  width: 22vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 8px 8px 0 0;
+  font-size: 190%;
+  font-family: "Fjalla One";
+}
+
+.active, .accordion:hover {
+  /* background-color: #ccc; */
+  filter: brightness(90%);
+}
+
+.panel {
+  /* margin:1rem; */
+  background-color: #f8edeb;
+  color:#014f86;
+  font-size: 150%;
+  max-height: 0;
+  width:22vw;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion::after {
+  content: '+';  /* normal plus */
+  color: #014f86;
+  font-size: 170%;
+  float: right;
+  
+  /* margin-left: 5px; */
+  
+}
+
+.active:after {
+   content: '\2212';  /* normal minus */
+  color: #014f86;
+}
+
+.panel > ul{
+  padding: 1vw 0 1vw 2vw;
+}
+@media(min-width: 1000px){
+
+  #home{
+    grid-template-columns: 5fr 3fr ;
+  }
+p{
+  text-align: center;
+  font-size: 200%;
+}
+h2{
+  text-align: center;
+  padding: 3.5vh;
+}
+#headshot{
+  width: 90vw;
+  margin-top: 12vh;
+ }
+  #home > div{
+    grid-column:2/span 1;
+    justify-content: center;
+  }
+  #home > img{
+    grid-column:1/span 1;
+  }
+  .projectgallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    align-items: center;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+    /* flex-direction: row; */
+    /* max-width: 100%; */
+  } 
+  
+  
+ 
+  .project {
+  height:43vh;
+  width: 19vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  }
+  .projectgallery > .project{
+    margin: 0;
+    margin-right: 5%;
+    
+  }
+ 
+ 
+  
+  /* :focus {
+    /* z-index: 10; */
+    /* transform: rotateY(180deg); */
+  
+  .logos{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+   
+  }
+  .logos img{
+    width: 10vh;
+  }
+
+  #contactme{
+    /* display:flex; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-evenly; */
+   display:grid;
+   grid-template-columns: 5fr 1fr;
+  }
+  
+  #contact-form{
+    height:70vh;
+    width: 70vw;
+    grid-column: 1/span 1;
+  }
+  .logos{
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  #skillgallery{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding-right: 10vw; */
+  }
+  
+  #education{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  #educationinfo{
+    grid-column: 1/span 1;
+  }
+  #courses{
+    grid-column: 2/span 1;
+  }
+  #courses > .accordion, #courses > .panel{
+    width: 28vw;
+  }
+  #experience{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.project > img{
+  margin-top: 2rem;
+}
+  /* additional changes made in the javascript for the go to top button  */
+
+
+  @media(max-width: 999px){
+
+    #main{
+      row-gap: 5vh;;
+    }
+    .accordion{
+      width: 70vw;
+    }
+    .panel{
+      width: 70vw;
+    }
+
+
+
+
+   
+  .logos > a{
+      width: 60%;
+    }
+
+    form {
+      /* display: grid; 
+      grid-template-rows: 1fr 1fr 3fr;
+      grid-template-columns: 1fr; */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      
+    }
+    #messagebox{
+      padding: 0;
+    }
+    #messagetext{
+     
+      width: 50vw;
+      height: 20vh;
+      border: none;
+      padding: 0;
+      margin: 0;
+      border-radius: 8px; 
+    }
+    #email, #name{
+      width: 50vw;
+      height: 4vh;
+    }
+    
+    .projectgallery{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project{
+      height:33vh;
+      width: 60vw;
+    }
+    #languages, #tools{
+      margin-bottom: 2vh;
+    }
+    #skillgallery{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #education{
+      margin-bottom: 3vh;
+    }
+    #workexperience{
+      margin-bottom: 3vh;
+    }
+    #home > div{
+      text-align: center;
+    }
+  }
